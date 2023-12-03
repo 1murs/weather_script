@@ -1,0 +1,59 @@
+
+Functionality:
+
+The program utilizes the OpenWeather API to fetch weather forecast data for a specified city and country code.
+Users can choose to either input a new city and country code or agree to use the previously selected location stored in the log file.
+The application generates humorous phrases based on the current temperature, adding a playful touch to the weather information.
+Features:
+
+The user has the option to agree with the current city and country code, view the current location, change the location, or exit the program.
+The program stores the selected city and country code in a log file for future reference.
+It uses a loading bar (tqdm) to provide a visual indication of processes like loading or fetching data.
+Components:
+
+OpenweatherAPI: A custom class for interacting with the OpenWeather API, fetching forecast data for a specified location.
+list_of_phrases: Lists of humorous phrases categorized based on different temperature ranges.
+write_location: Writes the selected city and country code to a log file.
+show_location: Reads from the log file and returns a string representation of the stored location.
+choose_location: Calls the OpenWeather API to get forecast data for the selected city and country code.
+phrase_generator: Generates a random humorous phrase based on the current temperature.
+User Interaction:
+
+The program runs in a loop, allowing the user to make multiple selections without restarting.
+It provides a menu with options to choose, show, or change the location, as well as to exit the program.
+Input validation is implemented to handle unexpected user inputs.
+Execution:
+
+
+You can run this code in 2 steps.
+
+1) STEP
+
+1. install Python 3.11.0 (or newer but it might not work) (https://www.python.org/downloads/)
+(also don't forget to install it in PATH)
+
+2. run in project folder using cmd:
+python -m venv env
+env/Scripts/activate
+pip install -r requirements.txt
+
+3. add your api keys to credentials.py tutorial how to get them: (https://openweathermap.org/)
+If you're lazy, you can use mine, it's already recorded =)
+
+4. run bot:
+python main.py
+
+
+2) STEP
+
+It is already compiled into an exe file
+Just go to the folder [output\main\main.exe]
+
+If you want to compile yourself
+Go to the terminal
+
+Then to run it, execute the following in the terminal:
+auto-py-to-exe
+Further according to the instructions: (https://pypi.org/project/auto-py-to-exe/)
+
+
